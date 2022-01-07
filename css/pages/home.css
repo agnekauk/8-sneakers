@@ -1,0 +1,68 @@
+@import '../3rd-party/font-awesome.min.css';
+@import '../base/reset.css';
+
+main {
+    background-color: #c7c5da;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 15px;
+}
+.header > .logo {
+    grid-area: logo;
+    object-fit: contain;
+    height: 50px;
+}
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+.menu:first-of-type {
+    color: red;
+}
+.menu:hover {
+    text-decoration: underline;
+    color: red;
+    font-weight: 500;
+}
+.icon-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+.icon-bar > a {
+    color: #fff;
+    text-decoration: none;
+    justify-content: center;
+    gap: 5px;
+}
+.section {
+    display: grid;
+    grid-column-start: 2;
+}
+
+@media (min-width: 700px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 800px) {
+}
+@media (min-width: 900px) {
+}

@@ -1,0 +1,16 @@
+{
+  "name": "8-sneakers",
+  "version": "1.0.0",
+  "description": "Design example for learnig purpose",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server --port=3021 --host=localhost",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Agne",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}

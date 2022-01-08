@@ -56,7 +56,6 @@ nav {
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    padding-right: 0;
     position: relative;
 }
 .number {
@@ -74,6 +73,7 @@ nav {
     width: 100%;
     height: auto;
     position: static;
+    padding: 10px;
 }
 .bubble-1 {
     height: 300px;
@@ -186,13 +186,77 @@ footer > div {
     left: 33%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
+    .number {
+        margin-right: 50px;
+    }
+    main {
+        padding: 20px;
+    }
 }
 @media (min-width: 700px) {
+    main {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
     .header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
+    }
+    .section {
+        display: grid;
+        padding-top: 40px;
+        padding-left: 20px;
+        align-items: left;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            'title title number'
+            'content content socials'
+            'price sneakers socials'
+            'button sneakers socials';
+    }
+    .number {
+        grid-area: number;
+        justify-self: end;
+        margin-right: 10px;
+    }
+    h1 {
+        grid-area: title;
+        justify-self: start;
+    }
+    .content {
+        grid-area: content;
+        justify-self: start;
+        text-align: left;
+    }
+    .price {
+        grid-area: price;
+        justify-self: start;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .button {
+        grid-area: button;
+        justify-self: start;
+    }
+    .socials-box {
+        grid-area: socials;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-right: 25px;
+    }
+    .sneakers {
+        grid-area: sneakers;
+    }
+    .bubble-1 {
+        transform: translate(3%, -38%);
+    }
+    .bubble-2 {
+        transform: translate(100%, 10%);
     }
 }
 @media (min-width: 800px) {

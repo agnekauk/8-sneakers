@@ -128,10 +128,10 @@ h1 {
     z-index: 1;
 }
 .button:hover {
-    border: 3px solid #000;
+    border: 1px solid #000;
 }
 .button-title {
-    padding: 10px 30px;
+    padding: 10px 20px;
     background-color: #c00921;
 }
 .fa-long-arrow-right {
@@ -210,7 +210,7 @@ footer > div {
         padding-top: 40px;
         padding-left: 20px;
         align-items: left;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 4fr 8fr 1fr;
         grid-template-areas:
             'title title number'
             'content content socials'
@@ -240,6 +240,7 @@ footer > div {
     .button {
         grid-area: button;
         justify-self: start;
+        font-size: 12px;
     }
     .socials-box {
         grid-area: socials;
@@ -251,12 +252,13 @@ footer > div {
     }
     .sneakers {
         grid-area: sneakers;
+        padding: 0;
     }
     .bubble-1 {
         transform: translate(3%, -38%);
     }
     .bubble-2 {
-        transform: translate(100%, 10%);
+        transform: translate(100%, -30%);
     }
 }
 @media (min-width: 800px) {

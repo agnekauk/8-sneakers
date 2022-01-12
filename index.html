@@ -6,29 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/pages/home.css">
 </head>
 
 <body>
     <main>
-        <header>
+        <header class="header">
             <img src="./img/logo.png" alt="Logo" class="logo">
             <nav>
-                <a href="#">Home</a>
-                <a href="#">He's</a>
-                <a href="#">She's</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
+                <a href="#" class="menu">Home</a>
+                <a href="#" class="menu">He's</a>
+                <a href="#" class="menu">She's</a>
+                <a href="#" class="menu">About us</a>
+                <a href="#" class="menu">Contact us</a>
             </nav>
-            <div class="icon-bar"></div>
+            <div class="icon-bar">
+                <a href="#" class="fa fa-search" aria-hidden="true"></a>
+                <a href="#" class="fa fa-shopping-cart" aria-hidden="true"></a>
+                <a href="#" class="fa fa-user" aria-hidden="true"></a>
+            </div>
         </header>
-        <section>
+        <section class="section">
+            <p class="number">.01</p>
             <h1>adidas shoes</h1>
-            <p></p>
-            <p><span></span>150.00</p>
-            <i>Shop now</i>
-            <div class="socials"></div>
+            <p class="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, pariatur.</p>
+            <p class="price">$ 150.00</p>
+            <div class="bubble-1"></div>
+            <img src="img/sneakers.png" alt="Sneakers" class="sneakers">
+            <div class="bubble-2"></div>
+            <a href="#" class="button">
+                <span class="button-title">Shop now</span>
+                <span class="fa fa-long-arrow-right" aria-hidden="true">
+                </span>
+            </a>
+            <div class="socials-box">
+                <a href="#" class="fa fa-twitter socials" aria-hidden="true"></a>
+                <a href="#" class="fa fa-facebook socials" aria-hidden="true"></a>
+                <a href="#" class="fa fa-linkedin socials" aria-hidden="true"></a>
+                <a href="#" class="fa fa-tumblr socials" aria-hidden="true"></a>
+            </div>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="start">01</div>
+            <div class="end">03</div>
+            <a href="#" class="line"></a>
+        </footer>
     </main>
 
 </body>

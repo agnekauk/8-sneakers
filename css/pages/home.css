@@ -91,7 +91,7 @@ nav {
     border-radius: 100px;
     border: none;
     background-color: #ececf4;
-    z-index: -0;
+    z-index: 0;
     position: absolute;
     transform: translate(110%, 150%);
     opacity: 0.3;
@@ -196,8 +196,8 @@ footer > div {
 }
 @media (min-width: 700px) {
     main {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .header {
         flex-direction: row;
@@ -207,20 +207,25 @@ footer > div {
     }
     .section {
         display: grid;
-        padding-top: 40px;
+        background-image: url('../../img/sneakers.png');
+        background-repeat: no-repeat;
+        background-position: 60% 110%;
+        background-size: 400px, 400px;
+        padding-top: 110px;
         padding-left: 20px;
-        align-items: left;
-        grid-template-columns: 4fr 8fr 1fr;
+        grid-template-columns: 8fr 1fr;
+        gap: 15px;
         grid-template-areas:
-            'title title number'
-            'content content socials'
-            'price sneakers socials'
-            'button sneakers socials';
+            'title number'
+            'content socials'
+            'price socials'
+            'button socials';
     }
     .number {
         grid-area: number;
         justify-self: end;
-        margin-right: 10px;
+        margin-right: 15px;
+        font-size: 104px;
     }
     h1 {
         grid-area: title;
@@ -230,17 +235,17 @@ footer > div {
         grid-area: content;
         justify-self: start;
         text-align: left;
+        width: 50%;
     }
     .price {
         grid-area: price;
         justify-self: start;
-        margin-top: 30px;
-        margin-bottom: 40px;
     }
     .button {
         grid-area: button;
         justify-self: start;
         font-size: 12px;
+        margin-top: 20px;
     }
     .socials-box {
         grid-area: socials;
@@ -251,14 +256,22 @@ footer > div {
         margin-right: 25px;
     }
     .sneakers {
-        grid-area: sneakers;
-        padding: 0;
+        display: none;
     }
     .bubble-1 {
-        transform: translate(3%, -38%);
+        transform: translate(-60%, -10%);
     }
     .bubble-2 {
-        transform: translate(100%, -30%);
+        transform: translate(30%, -50%);
+    }
+    footer {
+        width: 33%;
+    }
+    .line::before {
+        width: 10%;
+    }
+    .line:hover::before {
+        left: 14%;
     }
 }
 @media (min-width: 800px) {

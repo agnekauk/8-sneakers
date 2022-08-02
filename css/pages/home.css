@@ -127,16 +127,21 @@ h1 {
     text-decoration: none;
     z-index: 1;
 }
-.button:hover {
-    border: 1px solid #000;
-}
 .button-title {
     padding: 10px 20px;
     background-color: #c00921;
 }
+.button-title:hover {
+    border: 1px solid #000;
+    padding: 9px 19px;
+}
 .fa-long-arrow-right {
     padding: 10px;
     background-color: #000;
+}
+.fa-long-arrow-right:hover {
+    border: 1px solid #fff;
+    padding: 9px;
 }
 .socials-box {
     margin-top: 20px;
@@ -165,26 +170,37 @@ footer {
 footer > .line {
     flex-direction: column;
 }
-footer > div {
+footer > .start, .end {
     color: #c00921;
     font-size: 12px;
     padding: 4px;
 }
-.line {
+.longline {
+    display: flex;
     width: 100%;
+}
+.line1 {
+    width: 50%;
+    height: 3px;
+    background-color: #c00921;
+    margin: 5px 0px;
+}
+.line2 {
+    width: 50%;
     height: 3px;
     background-color: #cbbcc3;
+    margin: 5px 0px;
 }
-.line::before {
+/* .line::before {
     content: '';
-    width: 33%;
+    width: 43%;
     height: 4px;
     background-color: #c00921;
     position: absolute;
-}
-.line:hover::before {
-    left: 33%;
-}
+} */
+/* .line:hover::before {
+    left: 49%;
+} */
 
 @media (min-width: 500px) {
     .number {
@@ -198,6 +214,7 @@ footer > div {
     main {
         padding-left: 30px;
         padding-right: 30px;
+        height: 100vh;
     }
     .header {
         flex-direction: row;
@@ -220,6 +237,9 @@ footer > div {
             'content socials'
             'price socials'
             'button socials';
+    }
+    .background-image2 {
+        background-image: url('../../img/sneakers2.png');
     }
     .number {
         grid-area: number;

@@ -21,6 +21,7 @@ Design: [Sneakers](https://cdn.discordapp.com/attachments/850245533838868480/850
 -   **_Web content_**
 -   **_Responsive design_**
 -   **_Progress bar animation_**
+-   **_Javascript_**
 
 ### Authors
 

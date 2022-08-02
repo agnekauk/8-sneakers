@@ -4,13 +4,13 @@
   "description": "Design example for learnig purpose",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server --port=3021 --host=localhost",
+    "start": "live-server --port=3021 --host=localhost",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Agne",
   "license": "MIT",
   "devDependencies": {
-    "live-server": "^1.2.1"
+    "dead-server": "^1.0.6"
   }
 }

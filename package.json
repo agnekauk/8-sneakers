@@ -4,7 +4,7 @@
   "description": "Design example for learnig purpose",
   "main": "index.js",
   "scripts": {
-    "start": "live-server --port=3021 --host=localhost",
+    "start": "dead-server --port=3021 --host=localhost",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
